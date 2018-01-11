@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>Test Report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-10-10 12:21:49</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:03.015000</p>
+<p class='attribute'><strong>Status:</strong> Pass 11 Failure 3 Error 3</p>
+
+<p class='description'>generated by HTMLTestRunner.</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>TestAccount.TestAccountSignin.TestAccountSignin: 测试账号服务接口（登录）</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_1_signin: Test api signin process</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 获取验证码token
+&lt;Response [200]&gt; 200 OkCvliLaL4olsb3ZU0aG 操作成功 0
+获取验证码
+&lt;Response [200]&gt; 200 42333
+发送验证码
+传入参数：{"purpose": "signin", "phone": "+86 17801446652", "Source": "web", "captcha_token":"OkCvliLaL4olsb3ZU0aG","captcha_value":"42333"}
+&lt;Response [200]&gt; 返回值：{"code":0,"message":"操作成功","verify_code":"097209"}
+
+验证码校验
+传入参数：{"purpose": "signin", "phone": "+86 17801446652","Source": "web", "verify_code":"097209"}
+&lt;Response [200]&gt; 返回值：{"code":0,"message":"操作成功"}
+
+登录
+传入参数：{"password": "Sgk123!@#", "phone": "+86 17801446652","Source": "web", "captcha_token":"OkCvliLaL4olsb3ZU0aG","captcha_value":"42333"}
+&lt;Response [200]&gt; 返回值：{"code":0,"message":"操作成功","token":"AQIBAAismY90sj1MTiebko8F4mxEIn-Riox8hNT5VrrLhtbl5b0guR797LMV9iPbSfpjUL1zxbEmTr1u1CaQtbDNiETeStxZ0AJBUUFDazVIeEZJWmRDZ0FBbHZYMTFHQWE2QlJQQkFBQXdlYg=="}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>TestTenant.TestTenant.TestTenant: 测试Tenant流程</td>
+    <td>16</td>
+    <td>10</td>
+    <td>3</td>
+    <td>3</td>
+    <td><a href="javascript:showClassDetail('c2',16)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_1_create_tenant_or_org: Test POST /account/org</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: 8995c3a1-ad72-11e7-bc7b-ec55f9ff19d7
+传入参数：{"phone": "12345678999", "fax": "0592-88887777", "primaryContact": {"phone": "12345678999", "name": "\u6d4b\u8bd5", "email": "test@qq.com"}, "name": "\u6d4b\u8bd58995c3a2-ad72-11e7-8374-ec55f9ff19d7", "address": {"city": "beijing", "post_code": "200", "country": "China", "state": "wanggujin", "street": "ddddd", "country_code": "010"}}
+&lt;Response [200]&gt; {"body":{"id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","name":"测试8995c3a2-ad72-11e7-8374-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAA13BEJa4a7BRuDAAA"},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_2_1_tenant_invitation: Test Post /tenant/invitation</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        fail</a>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: 传入参数：{"phone":"+86 13520412582"}
+&lt;Response [200]&gt; {"body":null,"code":106102,"msg":"[106102: 缺少Token] access token missed"}
+
+Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 87, in test_2_1_tenant_invitation
+    self.assertEqual(r.json()["code"], 0)
+AssertionError: 106102 != 0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2_2_account_deny_invitation: Test post /account/deny_invitation/:id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.3')" >
+        error</a>
+
+    <div id='div_ft2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.3: Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 94, in test_2_2_account_deny_invitation
+    id = self.test_31_tenant_invitation()
+AttributeError: 'TestTenant' object has no attribute 'test_31_tenant_invitation'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2_3_tenant_cancel_invitation: Test post /tenant/cancel_invitation/:id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.4')" >
+        error</a>
+
+    <div id='div_ft2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.4: Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 107, in test_2_3_tenant_cancel_invitation
+    id = self.test_31_tenant_invitation()
+AttributeError: 'TestTenant' object has no attribute 'test_31_tenant_invitation'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_2_4_account_accept_invitation: Test Post /account/accept_invitation/id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.5')" >
+        error</a>
+
+    <div id='div_ft2.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.5: Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 119, in test_2_4_account_accept_invitation
+    id = self.test_31_tenant_invitation()
+AttributeError: 'TestTenant' object has no attribute 'test_31_tenant_invitation'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_2_tenant_sign: Test POST /account/signin</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
+        pass</a>
+
+    <div id='div_pt2.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.6: 传入参数：{"source":"web","tenant_id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA"}
+&lt;Response [200]&gt; {"body":{"access_token":"ATUBAN9K3Fl4AEFRQUNrNUh4RkliMERRQUExM0JFSmE0YTdCUnVEQUFBQVFBQ2s1SHhGSWIwRFFBQW1Mc3VKYTRhN0JSdERBQUFLPZj8rs4CINUJ1TEa1pLwRzSqDuNMuO6BB5FH4IH54DoFE2tx1uaMLWuA825ek3-Oj7Ao4DPx_gcjCdGAueg4","refresh_token":"WdxK3ydgQVFBQ2s1SHhGSWIwRFFBQTEzQkVKYTRhN0JSdURBQUFBUUFDazVIeEZJYjBEUUFBbUxzdUphNGE3QlJ0REFBQYoK1jWtchHnlZACk5HxFIY="},"code":0,"msg":null}
+
+ATUBAN9K3Fl4AEFRQUNrNUh4RkliMERRQUExM0JFSmE0YTdCUnVEQUFBQVFBQ2s1SHhGSWIwRFFBQW1Mc3VKYTRhN0JSdERBQUFLPZj8rs4CINUJ1TEa1pLwRzSqDuNMuO6BB5FH4IH54DoFE2tx1uaMLWuA825ek3-Oj7Ao4DPx_gcjCdGAueg4
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_3_tenant_org_update: Test POST /tenant/org/update</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.7')" >
+        pass</a>
+
+    <div id='div_pt2.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.7: 传入参数：{"org": {"phone": "12345678999", "fax": "0592-88887777", "primaryContact": {"phone": "12345678999", "name": "\u6d4b\u8bd5", "email": "test@qq.com"}, "name": "\u6d4b\u8bd58a11834f-ad72-11e7-9d68-ec55f9ff19d7", "creatorAccountId": "AQAC12hSbKqGKQAAFmS7xyHg4xQ0GwAA", "address": {"city": "beijing", "post_code": "200", "country": "China", "state": "wanggujin", "street": "ddddd", "country_code": "010"}, "id": "AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA", "lastUpdatorAccountId": "AQAC12hSbKqGKQAAFmS7xyHg4xQ0GwAA"}, "id": "AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA"}
+&lt;Response [200]&gt; {"body":{"id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","name":"测试8a11834f-ad72-11e7-9d68-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"}},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_4_get_tenant_org: Test get /tenant/org/:id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.8')" >
+        pass</a>
+
+    <div id='div_pt2.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.8: 传入参数：AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA
+&lt;Response [200]&gt; {"body":{"id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","name":"测试8a11834f-ad72-11e7-9d68-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAA13BEJa4a7BRuDAAA","created_at":1507580510,"user_count":1},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_5_get_account_orgs: Test get /account/orgs?name=xxx</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.9')" >
+        pass</a>
+
+    <div id='div_pt2.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.9: &lt;Response [200]&gt; {"body":{"orgs":[{"id":"AQAC12hSbKqGKQAAFmS7xyHg4xQ0GwAA","name":"测试2","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","last_updator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","admin":"AQAC12hSbKqGKQAArwbHxyHg4xQ1GwAA","created_at":1505264336},{"id":"AQACjgnSa7JQZAAA5eTj20mA5BSlAAAA","name":"CTI测试企业","phone":"+86 15071346799","address":{},"creator_account_id":"AQACd5VVkc56EgAAS6CkK5aQ0BSFAAAA","last_updator_account_id":"AQACd5VVkc56EgAAS6CkK5aQ0BSFAAAA","admin":"AQACjgnSa7JQZAAA0GHt20mA5BSmAAAA","created_at":1505440430},{"id":"AQACk5HxFIZXCQAAibBMHUVF5hSvBgAA","name":"测试","phone":"12345678999","address":{},"creator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","last_updator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","admin":"AQACk5HxFIZXCQAATvNYHUVF5hSwBgAA","created_at":1505938488},{"id":"AQACk5HxFIZdCgAA9HnNB3Gr5hTGAgAA","name":"测试211","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","last_updator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","admin":"AQACk5HxFIZdCgAAgOHaB3Gr5hTHAgAA","created_at":1506050827},{"id":"AQACk5HxFIZdCgAAHkTyJBKU5xTPAwAA","name":"测试企业","phone":"+86 13021996780","address":{},"creator_account_id":"AQAC12hSbKrFCAAAc669aciV3xThAQAA","last_updator_account_id":"AQAC12hSbKrFCAAAc669aciV3xThAQAA","admin":"AQACk5HxFIZdCgAARI8AJRKU5xTQAwAA","created_at":1506306606},{"id":"AQACk5HxFIb0DQAABSl41PQT7BRVDAAA","name":"SGSoft测试","phone":"17801446652","fax":"+86 56789098765","address":{"street":"龙域北街","city":"北京","state":"海淀区","post_code":"100026","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAAemqF1PQT7BRWDAAA","created_at":1507573117},{"id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","name":"测试8a11834f-ad72-11e7-9d68-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAA13BEJa4a7BRuDAAA","created_at":1507580510},{"id":"AQACk5HxFIb0DQAAqCD4qaIX6RQrAQAA","name":"测试aad37930-a5bc-11e7-bed4-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","last_updator_account_id":"AQAC12hSbKqGKQAAwxulnq3_4RRJBQAA","admin":"AQACk5HxFIb0DQAADdsEqqIX6RQsAQAA","created_at":1506732738},{"id":"AQACk5HxFIb0DQAAxIOAmE4Z7BRnDAAA","name":"测试06116d70-ad6f-11e7-b051-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAA53uNmE4Z7BRoDAAA","created_at":1507579001},{"id":"AQACk5HxFIb0DQAAzFOn7ufY6xS_CwAA","name":"测试28347ff0-acca-11e7-97a6-ec55f9ff19d7","phone":"12345678999","fax":"0592-88887777","address":{"street":"ddddd","city":"beijing","state":"wanggujin","post_code":"200","country":"China","country_code":"010"},"creator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","last_updator_account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","admin":"AQACk5HxFIb0DQAAh2G27ufY6xTACwAA","created_at":1507508191}]},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_6_get_tenant_relations: Test get /tenant/relations</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.10')" >
+        pass</a>
+
+    <div id='div_pt2.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.10: &lt;Response [200]&gt; {"body":{"items":[{"id":5135,"created_at":1507580510,"updated_at":1507580510,"user_id":"AQACk5HxFIb0DQAA13BEJa4a7BRuDAAA","tenant_id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"测试8a11834f-ad72-11e7-9d68-ec55f9ff19d7"}]},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_7_get_account_relations: Test get /account/relations</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.11')" >
+        pass</a>
+
+    <div id='div_pt2.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.11: &lt;Response [200]&gt; {"body":{"items":[{"id":5131,"created_at":1507573117,"updated_at":1507573117,"user_id":"AQACk5HxFIb0DQAAemqF1PQT7BRWDAAA","tenant_id":"AQACk5HxFIb0DQAABSl41PQT7BRVDAAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"SGSoft测试"},{"id":5127,"created_at":1507506658,"updated_at":1507506658,"user_id":"AQACk5HxFIb0DQAACaswCoPX6xQ7CwAA","tenant_id":"AQACk5HxFIb0DQAABrsjCoPX6xQ6CwAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"test12132"},{"id":5135,"created_at":1507580510,"updated_at":1507580510,"user_id":"AQACk5HxFIb0DQAA13BEJa4a7BRuDAAA","tenant_id":"AQACk5HxFIb0DQAAmLsuJa4a7BRtDAAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"测试8a11834f-ad72-11e7-9d68-ec55f9ff19d7"},{"id":5134,"created_at":1507579001,"updated_at":1507579001,"user_id":"AQACk5HxFIb0DQAA53uNmE4Z7BRoDAAA","tenant_id":"AQACk5HxFIb0DQAAxIOAmE4Z7BRnDAAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"测试06116d70-ad6f-11e7-b051-ec55f9ff19d7"},{"id":5128,"created_at":1507508191,"updated_at":1507508191,"user_id":"AQACk5HxFIb0DQAAh2G27ufY6xTACwAA","tenant_id":"AQACk5HxFIb0DQAAzFOn7ufY6xS_CwAA","account_id":"AQACk5HxFIZdCgAAlvX11GAa6BRPBAAA","org_name":"测试28347ff0-acca-11e7-97a6-ec55f9ff19d7"}]},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.12' class='none'>
+    <td class='failCase'><div class='testcase'>test_8_tenant_refresh_token: Test put /tenant/refresh_token</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.12')" >
+        fail</a>
+
+    <div id='div_ft2.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.12: 传入参数：{"RefreshToken":"WdxK3ydgQVFBQ2s1SHhGSWIwRFFBQTEzQkVKYTRhN0JSdURBQUFBUUFDazVIeEZJYjBEUUFBbUxzdUphNGE3QlJ0REFBQYoK1jWtchHnlZACk5HxFIY="}
+&lt;Response [200]&gt; {"body":null,"code":105603,"msg":"无效 Refresh TOKEN:DecodeRefreshToken: token is empty"}
+
+Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 228, in test_8_tenant_refresh_token
+    self.assertEqual(r.json()["code"], 0)
+AssertionError: 105603 != 0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_9_1personal_token: Test POST /personal_token</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.13')" >
+        pass</a>
+
+    <div id='div_pt2.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.13: 传入参数：{"name":"zhouli"}
+&lt;Response [200]&gt; {"body":{"personal_token":"ATYBAN9K3FkAAEFRQUNrNUh4RkliMERRQUExM0JFSmE0YTdCUnVEQUFBQVFBQ2s1SHhGSWIwRFFBQW1Mc3VKYTRhN0JSdERBQUHmBWeeZVVIJSoowNlCmfV9xYRoLv_GWdd8M_SY7gckSn3dSTt0cmBTfV3Fjo7ri32N8veyeSGC_0MFTuYlYIMo"},"code":0,"msg":null}
+
+&lt;Response [200]&gt; {"body":{"personal_tokens":[{"name":"zhouli","created_at":1507580511}]},"code":0,"msg":null}
+
+传入参数：{"name":"zhouli"}
+&lt;Response [200]&gt; {"body":{},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_9_enterprise_info: Test get /enterprise_info/search_infoes</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.14')" >
+        pass</a>
+
+    <div id='div_pt2.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.14: &lt;Response [200]&gt; {"body":{},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_9_tenant_signout: Test post /tenant/signout</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.15')" >
+        pass</a>
+
+    <div id='div_pt2.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.15: &lt;Response [200]&gt; {"body":{},"code":0,"msg":null}
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.16' class='none'>
+    <td class='failCase'><div class='testcase'>test_9_tenant_user_delete: Test delete /tenant/user/:userId</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.16')" >
+        fail</a>
+
+    <div id='div_ft2.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.16: &lt;Response [200]&gt; {"body":null,"code":102,"msg":"[102: token拒绝]"}
+
+Traceback (most recent call last):
+  File "F:\py_project\crm_ci_api_test\TestTenant\TestTenant.py", line 299, in test_9_tenant_user_delete
+    self.assertEqual(r.json()["code"], 0)
+AssertionError: 102 != 0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>17</td>
+    <td>11</td>
+    <td>3</td>
+    <td>3</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

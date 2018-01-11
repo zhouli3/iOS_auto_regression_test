@@ -1,0 +1,4189 @@
+{
+  "AQACd5VVkc7RCAAA6vXOmrnF6BSVKwAA": {
+    "obj_config": {
+      "Refund": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "RefundStatus",
+              "Plan",
+              "Approvalstatus",
+              "HaveInvoice",
+              "InvoiceStatus",
+              "Result",
+              "Reason"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "HaveInvoice",
+              "InvoiceStatus",
+              "Approvalstatus",
+              "RefundStatus",
+              "Plan",
+              "Reason"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "RechargeID",
+              "HaveInvoice",
+              "InvoiceID",
+              "InvoiceStatus",
+              "Approvalstatus",
+              "RefundStatus",
+              "CSID",
+              "Reason",
+              "AccountID",
+              "ContactID",
+              "Plan",
+              "Result",
+              "Reply",
+              "RefundTime",
+              "RefundMeChat",
+              "Proof",
+              "Proofs"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "RechargeID",
+            "HaveInvoice",
+            "InvoiceID",
+            "InvoiceStatus",
+            "Approvalstatus",
+            "RefundStatus",
+            "CSID",
+            "Reason",
+            "AccountID",
+            "ContactID",
+            "Plan",
+            "Result",
+            "Reply",
+            "RefundTime",
+            "RefundMeChat",
+            "Proof",
+            "Proofs"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "RechargeID",
+            "HaveInvoice",
+            "InvoiceID",
+            "InvoiceStatus",
+            "Approvalstatus",
+            "RefundStatus",
+            "CSID",
+            "Reason",
+            "AccountID",
+            "ContactID",
+            "Plan",
+            "Result",
+            "Reply",
+            "RefundTime",
+            "RefundMeChat",
+            "Proof",
+            "Proofs"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "RechargeID",
+            "HaveInvoice",
+            "InvoiceID",
+            "InvoiceStatus",
+            "Approvalstatus",
+            "RefundStatus",
+            "CSID",
+            "Reason",
+            "AccountID",
+            "ContactID",
+            "Plan",
+            "Result",
+            "Reply",
+            "RefundTime",
+            "RefundMeChat",
+            "Proof",
+            "Proofs"
+          ],
+          "update_order": [
+            "name",
+            "RechargeID",
+            "HaveInvoice",
+            "InvoiceID",
+            "InvoiceStatus",
+            "Approvalstatus",
+            "RefundStatus",
+            "CSID",
+            "Reason",
+            "AccountID",
+            "ContactID",
+            "Plan",
+            "Result",
+            "Reply",
+            "RefundTime",
+            "RefundMeChat",
+            "Proof",
+            "Proofs"
+          ]
+        }
+      },
+      "Leaves": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "LeaveDays",
+              "Reason",
+              "Proof",
+              "LeaveType"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "LeaveDays",
+              "Reason",
+              "Proof",
+              "LeaveType"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "LeaveDays",
+              "Reason",
+              "Proof",
+              "LeaveType"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "department",
+            "leavetype",
+            "starttime",
+            "endtime",
+            "days",
+            "reason",
+            "picture"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "department",
+            "leavetype",
+            "starttime",
+            "endtime",
+            "days",
+            "reason",
+            "picture"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "department",
+            "leavetype",
+            "starttime",
+            "endtime",
+            "days",
+            "reason",
+            "picture"
+          ],
+          "create_order": [
+            "name",
+            "department",
+            "leavetype",
+            "starttime",
+            "endtime",
+            "days",
+            "reason",
+            "picture"
+          ]
+        }
+      },
+      "ContactActivity": {
+        "list": {
+          "table": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "ActivityContent"
+            ]
+          },
+          "tab": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "android": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "ActivityContent"
+          ],
+          "update_order": [
+            "ActivityContent"
+          ]
+        }
+      },
+      "Opportunity": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "AccountID",
+              "Amount",
+              "CloseDate",
+              "owner",
+              "Stage1",
+              "Probability1",
+              "Stage2",
+              "Probability2",
+              "updated_at",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "AccountID",
+              "Amount",
+              "CloseDate",
+              "owner",
+              "Stage1",
+              "Probability1",
+              "Stage2",
+              "Probability2",
+              "updated_at",
+              "created_at"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "AccountID",
+              "Amount",
+              "CloseDate",
+              "owner",
+              "Stage1",
+              "Probability1",
+              "Stage2",
+              "Probability2",
+              "Phone",
+              "IndustryCategory",
+              "Industry",
+              "OtherService",
+              "AffiliatedDepartment",
+              "Competitor",
+              "CompetitorPrice",
+              "Disagreements",
+              "Demands",
+              "Excitements",
+              "FacilitatorType",
+              "FacilitatorDiscount",
+              "FacilitatorBusiness",
+              "FacilitatorDoubts",
+              "LosingStage",
+              "LosingReason",
+              "LosingDescription",
+              "StageUpdatedAt",
+              "Description",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "AccountID",
+            "Amount",
+            "CloseDate",
+            "owner",
+            "Stage1",
+            "Probability1",
+            "Stage2",
+            "Probability2",
+            "Phone",
+            "IndustryCategory",
+            "Industry",
+            "OtherService",
+            "AffiliatedDepartment",
+            "Competitor",
+            "CompetitorPrice",
+            "Disagreements",
+            "Demands",
+            "Excitements",
+            "FacilitatorType",
+            "FacilitatorDiscount",
+            "FacilitatorBusiness",
+            "FacilitatorDoubts",
+            "LosingStage",
+            "LosingReason",
+            "LosingDescription",
+            "StageUpdatedAt",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "AccountID",
+            "Amount",
+            "CloseDate",
+            "owner",
+            "Stage1",
+            "Probability1",
+            "Stage2",
+            "Probability2",
+            "Phone",
+            "IndustryCategory",
+            "Industry",
+            "OtherService",
+            "AffiliatedDepartment",
+            "Competitor",
+            "CompetitorPrice",
+            "Disagreements",
+            "Demands",
+            "Excitements",
+            "FacilitatorType",
+            "FacilitatorDiscount",
+            "FacilitatorBusiness",
+            "FacilitatorDoubts",
+            "LosingStage",
+            "LosingReason",
+            "LosingDescription",
+            "StageUpdatedAt",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "AccountID",
+            "Amount",
+            "CloseDate",
+            "owner",
+            "Stage1",
+            "Probability1",
+            "Stage2",
+            "Probability2",
+            "Phone",
+            "IndustryCategory",
+            "Industry",
+            "OtherService",
+            "AffiliatedDepartment",
+            "Competitor",
+            "CompetitorPrice",
+            "Disagreements",
+            "Demands",
+            "Excitements",
+            "FacilitatorType",
+            "FacilitatorDiscount",
+            "FacilitatorBusiness",
+            "FacilitatorDoubts",
+            "LosingStage",
+            "LosingReason",
+            "LosingDescription",
+            "StageUpdatedAt",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "AccountID",
+            "Amount",
+            "CloseDate",
+            "owner",
+            "Stage1",
+            "Probability1",
+            "Stage2",
+            "Probability2",
+            "Phone",
+            "IndustryCategory",
+            "Industry",
+            "OtherService",
+            "AffiliatedDepartment",
+            "Competitor",
+            "CompetitorPrice",
+            "Disagreements",
+            "Demands",
+            "Excitements",
+            "FacilitatorType",
+            "FacilitatorDiscount",
+            "FacilitatorBusiness",
+            "FacilitatorDoubts",
+            "LosingStage",
+            "LosingReason",
+            "LosingDescription",
+            "StageUpdatedAt",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "dynamic_rules": [
+            {
+              "name": "rule1",
+              "conditions": [
+                {
+                  "name": "IndustryCategory",
+                  "fields": "IndustryCategory",
+                  "operator": "==",
+                  "value": "金融业"
+                }
+              ],
+              "expression": "{{IndustryCategory}}",
+              "action": [
+                {
+                  "AccountID": {
+                    "visible": true
+                  }
+                },
+                {
+                  "Amount": {
+                    "visible": true
+                  }
+                }
+              ]
+            },
+            {
+              "name": "rule2",
+              "conditions": [
+                {
+                  "name": "IndustryCategory",
+                  "fields": "IndustryCategory",
+                  "operator": "==",
+                  "value": "商业服务"
+                }
+              ],
+              "expression": "{{IndustryCategory}}",
+              "action": [
+                {
+                  "AccountID": {
+                    "visible": false
+                  }
+                },
+                {
+                  "Amount": {
+                    "visible": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "rule3",
+              "conditions": [
+                {
+                  "name": "IndustryCategory",
+                  "fields": "IndustryCategory",
+                  "operator": "==",
+                  "value": "金融业"
+                },
+                {
+                  "name": "FacilitatorType",
+                  "fields": "FacilitatorType",
+                  "operator": "==",
+                  "value": "货款"
+                }
+              ],
+              "expression": "{{IndustryCategory}} && {{FacilitatorType}}",
+              "action": [
+                {
+                  "AccountID": {
+                    "visible": false,
+                    "require": false
+                  }
+                },
+                {
+                  "Amount": {
+                    "visible": true,
+                    "require": true
+                  }
+                }
+              ]
+            },
+            {
+              "name": "rule4",
+              "conditions": [
+                {
+                  "name": "IndustryCategory",
+                  "fields": "IndustryCategory",
+                  "operator": "==",
+                  "value": "金融业"
+                },
+                {
+                  "name": "FacilitatorType",
+                  "fields": "FacilitatorType",
+                  "operator": "==",
+                  "value": "保证金"
+                }
+              ],
+              "expression": "{{IndustryCategory}} && {{FacilitatorType}}",
+              "action": [
+                {
+                  "AccountID": {
+                    "visible": true,
+                    "require": true
+                  }
+                },
+                {
+                  "Amount": {
+                    "visible": false,
+                    "require": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "GeneralApproval": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Constent",
+              "ApprovalDetails",
+              "Amount",
+              "Remarks",
+              "Picture",
+              "Enclosure"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Constent",
+              "ApprovalDetails",
+              "Amount",
+              "Remarks",
+              "Picture",
+              "Enclosure"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Constent",
+              "ApprovalDetails",
+              "Amount",
+              "Remarks",
+              "Picture",
+              "Enclosure"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Constent",
+            "ApprovalDetails",
+            "Amount",
+            "Remarks",
+            "Picture",
+            "Enclosure"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Constent",
+            "ApprovalDetails",
+            "Amount",
+            "Remarks",
+            "Picture",
+            "Enclosure"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Constent",
+            "ApprovalDetails",
+            "Amount",
+            "Remarks",
+            "Picture",
+            "Enclosure"
+          ],
+          "create_order": [
+            "name",
+            "Constent",
+            "ApprovalDetails",
+            "Amount",
+            "Remarks",
+            "Picture",
+            "Enclosure"
+          ]
+        }
+      },
+      "LeadsActivity": {
+        "list": {
+          "table": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "ActivityContent"
+            ]
+          },
+          "tab": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "android": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "ActivityContent"
+          ],
+          "update_order": [
+            "ActivityContent"
+          ]
+        }
+      },
+      "PriceBookItem": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "PackageID",
+              "PriceBookID",
+              "Quantity",
+              "Price",
+              "Unit",
+              "Subtotal",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "PackageID",
+              "PriceBookID",
+              "Quantity",
+              "Price",
+              "Unit",
+              "Subtotal",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "PackageID",
+              "PriceBookID",
+              "Quantity",
+              "Price",
+              "Unit",
+              "Subtotal",
+              "Description",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "PackageID",
+            "PriceBookID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Subtotal",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "PackageID",
+            "PriceBookID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Subtotal",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "PackageID",
+            "PriceBookID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Subtotal",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "PackageID",
+            "PriceBookID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Subtotal",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        }
+      },
+      "MechatAccount": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "EnterpriseID",
+              "Email",
+              "CreatedAt",
+              "Cellphone",
+              "Realname",
+              "Privilege",
+              "LastLoginTime",
+              "LastActiveTime",
+              "Status",
+              "EmailActivated",
+              "GroupID",
+              "WorkNum",
+              "PublicCellphone",
+              "PublicEmail",
+              "QQ",
+              "ServingLimit",
+              "Signature",
+              "Telephone",
+              "Weixin",
+              "Audience",
+              "ReadFeatureID",
+              "Rank",
+              "DeletedAt",
+              "LastUpdated"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "EnterpriseID",
+              "Email",
+              "CreatedAt",
+              "Cellphone",
+              "Realname",
+              "Privilege",
+              "LastLoginTime",
+              "LastActiveTime",
+              "Status",
+              "EmailActivated",
+              "GroupID",
+              "WorkNum",
+              "PublicCellphone",
+              "PublicEmail",
+              "QQ",
+              "ServingLimit",
+              "Signature",
+              "Telephone",
+              "Weixin",
+              "Audience",
+              "ReadFeatureID",
+              "Rank",
+              "DeletedAt",
+              "LastUpdated"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "EnterpriseID",
+              "Email",
+              "CreatedAt",
+              "Cellphone",
+              "Realname",
+              "Privilege",
+              "LastLoginTime",
+              "LastActiveTime",
+              "Status",
+              "EmailActivated",
+              "GroupID",
+              "WorkNum",
+              "PublicCellphone",
+              "PublicEmail",
+              "QQ",
+              "ServingLimit",
+              "Signature",
+              "Telephone",
+              "Weixin",
+              "Audience",
+              "ReadFeatureID",
+              "Rank",
+              "DeletedAt",
+              "LastUpdated"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "EnterpriseID",
+            "Email",
+            "CreatedAt",
+            "Cellphone",
+            "Realname",
+            "Privilege",
+            "LastLoginTime",
+            "LastActiveTime",
+            "Status",
+            "EmailActivated",
+            "GroupID",
+            "WorkNum",
+            "PublicCellphone",
+            "PublicEmail",
+            "QQ",
+            "ServingLimit",
+            "Signature",
+            "Telephone",
+            "Weixin",
+            "Audience",
+            "ReadFeatureID",
+            "Rank",
+            "DeletedAt",
+            "LastUpdated"
+          ],
+          "create_order": [
+            "name",
+            "EnterpriseID",
+            "Email",
+            "CreatedAt",
+            "Cellphone",
+            "Realname",
+            "Privilege",
+            "LastLoginTime",
+            "LastActiveTime",
+            "Status",
+            "EmailActivated",
+            "GroupID",
+            "WorkNum",
+            "PublicCellphone",
+            "PublicEmail",
+            "QQ",
+            "ServingLimit",
+            "Signature",
+            "Telephone",
+            "Weixin",
+            "Audience",
+            "ReadFeatureID",
+            "Rank",
+            "DeletedAt",
+            "LastUpdated"
+          ]
+        }
+      },
+      "Pay": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "PayStatus",
+              "ResultAmount",
+              "Stage",
+              "IsCurrentMonth",
+              "RechargeID"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "RechargeID",
+              "PayStatus",
+              "Stage",
+              "ResultAmount"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "RechargeID",
+              "PayStatus",
+              "Stage",
+              "PlanAmount",
+              "PlanTime",
+              "IsCurrentMonth",
+              "ResultAmount",
+              "ResultTime",
+              "Method",
+              "ContactID",
+              "Proof",
+              "Proofs"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "RechargeID",
+            "PayStatus",
+            "Stage",
+            "PlanAmount",
+            "PlanTime",
+            "IsCurrentMonth",
+            "ResultAmount",
+            "ResultTime",
+            "Method",
+            "ContactID",
+            "Proof",
+            "Proofs"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "RechargeID",
+            "PayStatus",
+            "Stage",
+            "PlanAmount",
+            "PlanTime",
+            "IsCurrentMonth",
+            "ResultAmount",
+            "ResultTime",
+            "Method",
+            "ContactID",
+            "Proof",
+            "Proofs"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "RechargeID",
+            "PayStatus",
+            "Stage",
+            "PlanAmount",
+            "PlanTime",
+            "IsCurrentMonth",
+            "ResultAmount",
+            "ResultTime",
+            "Method",
+            "ContactID",
+            "Proof",
+            "Proofs"
+          ],
+          "update_order": [
+            "name",
+            "RechargeID",
+            "PayStatus",
+            "Stage",
+            "PlanAmount",
+            "PlanTime",
+            "IsCurrentMonth",
+            "ResultAmount",
+            "ResultTime",
+            "Method",
+            "ContactID",
+            "Proof",
+            "Proofs"
+          ]
+        }
+      },
+      "OpportunityActivity": {
+        "list": {
+          "table": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "ActivityContent"
+            ]
+          },
+          "tab": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "android": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "ActivityContent"
+          ],
+          "update_order": [
+            "ActivityContent"
+          ]
+        }
+      },
+      "Reimbursement": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Department",
+              "Amount",
+              "Reason",
+              "BankAccount",
+              "OpeningBank",
+              "InvoiceType",
+              "Money",
+              "Cost",
+              "Remarks",
+              "Enclosure"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Department",
+              "Amount",
+              "Reason",
+              "BankAccount",
+              "OpeningBank",
+              "InvoiceType",
+              "Money",
+              "Cost",
+              "Remarks",
+              "Enclosure"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Department",
+              "Amount",
+              "Reason",
+              "BankAccount",
+              "OpeningBank",
+              "InvoiceType",
+              "Money",
+              "Cost",
+              "Remarks",
+              "Enclosure"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Department",
+            "Amount",
+            "Reason",
+            "BankAccount",
+            "OpeningBank",
+            "InvoiceType",
+            "Money",
+            "Cost",
+            "Remarks",
+            "Enclosure"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Department",
+            "Amount",
+            "Reason",
+            "BankAccount",
+            "OpeningBank",
+            "InvoiceType",
+            "Money",
+            "Cost",
+            "Remarks",
+            "Enclosure"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Department",
+            "Amount",
+            "Reason",
+            "BankAccount",
+            "OpeningBank",
+            "InvoiceType",
+            "Money",
+            "Cost",
+            "Remarks",
+            "Enclosure"
+          ],
+          "create_order": [
+            "name",
+            "Department",
+            "Amount",
+            "Reason",
+            "BankAccount",
+            "OpeningBank",
+            "InvoiceType",
+            "Money",
+            "Cost",
+            "Remarks",
+            "Enclosure"
+          ]
+        }
+      },
+      "Purchase": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Reason",
+              "PurchasingCompany",
+              "Purchaser",
+              "PurchaseType",
+              "Department",
+              "DeliveryDate",
+              "Amount",
+              "Ming",
+              "Specifications",
+              "Number",
+              "PaymentMethod",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Reason",
+              "PurchasingCompany",
+              "Purchaser",
+              "PurchaseType",
+              "Department",
+              "DeliveryDate",
+              "Amount",
+              "Ming",
+              "Specifications",
+              "Number",
+              "PaymentMethod",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Reason",
+              "PurchasingCompany",
+              "Purchaser",
+              "PurchaseType",
+              "Department",
+              "DeliveryDate",
+              "Amount",
+              "Ming",
+              "Specifications",
+              "Number",
+              "PaymentMethod",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Reason",
+            "PurchasingCompany",
+            "Purchaser",
+            "PurchaseType",
+            "Department",
+            "DeliveryDate",
+            "Amount",
+            "Ming",
+            "Specifications",
+            "Number",
+            "PaymentMethod",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Reason",
+            "PurchasingCompany",
+            "Purchaser",
+            "PurchaseType",
+            "Department",
+            "DeliveryDate",
+            "Amount",
+            "Ming",
+            "Specifications",
+            "Number",
+            "PaymentMethod",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Reason",
+            "PurchasingCompany",
+            "Purchaser",
+            "PurchaseType",
+            "Department",
+            "DeliveryDate",
+            "Amount",
+            "Ming",
+            "Specifications",
+            "Number",
+            "PaymentMethod",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ],
+          "create_order": [
+            "name",
+            "Reason",
+            "PurchasingCompany",
+            "Purchaser",
+            "PurchaseType",
+            "Department",
+            "DeliveryDate",
+            "Amount",
+            "Ming",
+            "Specifications",
+            "Number",
+            "PaymentMethod",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        }
+      },
+      "Contact": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "AccountID",
+              "Title",
+              "Phone",
+              "MobilePhone",
+              "owner",
+              "Gender",
+              "Address",
+              "WeChat",
+              "Birthday",
+              "updated_at",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "AccountID",
+              "Title",
+              "Phone",
+              "MobilePhone",
+              "owner",
+              "Gender",
+              "Address",
+              "WeChat",
+              "Birthday",
+              "updated_at",
+              "created_at"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "AccountID",
+              "Title",
+              "Phone",
+              "MobilePhone",
+              "Email",
+              "owner",
+              "Gender",
+              "Department",
+              "WeChat",
+              "Address",
+              "Birthday",
+              "PostalCode",
+              "AffiliatedDepartment",
+              "Description",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "AccountID",
+            "Title",
+            "Phone",
+            "MobilePhone",
+            "Email",
+            "owner",
+            "Gender",
+            "Department",
+            "WeChat",
+            "Address",
+            "Birthday",
+            "PostalCode",
+            "AffiliatedDepartment",
+            "Decription",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "AccountID",
+            "Title",
+            "Phone",
+            "MobilePhone",
+            "Email",
+            "owner",
+            "Gender",
+            "Department",
+            "WeChat",
+            "Address",
+            "Birthday",
+            "PostalCode",
+            "AffiliatedDepartment",
+            "Decription",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "AccountID",
+            "Title",
+            "Phone",
+            "MobilePhone",
+            "Email",
+            "owner",
+            "Gender",
+            "Department",
+            "WeChat",
+            "Address",
+            "Birthday",
+            "PostalCode",
+            "AffiliatedDepartment",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "AccountID",
+            "Title",
+            "Phone",
+            "MobilePhone",
+            "Email",
+            "owner",
+            "Gender",
+            "Department",
+            "WeChat",
+            "Address",
+            "Birthday",
+            "PostalCode",
+            "AffiliatedDepartment",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        }
+      },
+      "Seal": {
+        "list": {
+          "table": {
+            "order": [
+              "District",
+              "Department",
+              "Document",
+              "Quantity",
+              "FileType",
+              "Sealed",
+              "ToDate",
+              "Proof",
+              "Remarks"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "District",
+              "Department",
+              "Document",
+              "Quantity",
+              "FileType",
+              "Sealed",
+              "ToDate",
+              "Proof",
+              "Remarks"
+            ]
+          },
+          "tab": {
+            "order": [
+              "District",
+              "Department",
+              "Document",
+              "Quantity",
+              "FileType",
+              "Sealed",
+              "ToDate",
+              "Proof",
+              "Remarks"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "District",
+            "Department",
+            "Document",
+            "Quantity",
+            "FileType",
+            "Sealed",
+            "ToDate",
+            "Proof",
+            "Remarks"
+          ]
+        },
+        "android": {
+          "order": [
+            "District",
+            "Department",
+            "Document",
+            "Quantity",
+            "FileType",
+            "Sealed",
+            "ToDate",
+            "Proof",
+            "Remarks"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "District",
+            "Department",
+            "Document",
+            "Quantity",
+            "FileType",
+            "Sealed",
+            "ToDate",
+            "Proof",
+            "Remarks"
+          ],
+          "create_order": [
+            "name",
+            "District",
+            "Department",
+            "Document",
+            "Quantity",
+            "FileType",
+            "Sealed",
+            "ToDate",
+            "Proof",
+            "Remarks"
+          ]
+        }
+      },
+      "Travels": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "TravelDays",
+              "Reason",
+              "Proof",
+              "Location"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "TravelDays",
+              "Reason",
+              "File",
+              "Location"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "District",
+              "Department",
+              "StartTime",
+              "EndTime",
+              "TravelDays",
+              "Reason",
+              "File",
+              "Location"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "District",
+            "Department",
+            "StartTime",
+            "EndTime",
+            "TravelDays",
+            "Reason",
+            "File",
+            "Location"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "District",
+            "Department",
+            "StartTime",
+            "EndTime",
+            "TravelDays",
+            "Reason",
+            "File",
+            "Location"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "District",
+            "Department",
+            "StartTime",
+            "EndTime",
+            "TravelDays",
+            "Reason",
+            "File",
+            "Location",
+            "TrafficExpense",
+            "HotelExpense",
+            "Meals",
+            "OtherExpenses",
+            "Remarks",
+            "Picture",
+            "Phoose"
+          ],
+          "create_order": [
+            "name",
+            "District",
+            "Department",
+            "StartTime",
+            "EndTime",
+            "TravelDays",
+            "Reason",
+            "File",
+            "Location",
+            "TrafficExpense",
+            "HotelExpense",
+            "Meals",
+            "OtherExpenses",
+            "Remarks",
+            "Picture",
+            "Phoose"
+          ]
+        }
+      },
+      "Account": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Rating",
+              "Address",
+              "Phone",
+              "owner",
+              "Type",
+              "TransferDate",
+              "Source",
+              "Status",
+              "updated_at",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Rating",
+              "Address",
+              "Phone",
+              "owner",
+              "Type",
+              "Source",
+              "Status",
+              "updated_at",
+              "created_at"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Rating",
+              "Address",
+              "Phone",
+              "Website",
+              "owner",
+              "IndustryCategory",
+              "Industry",
+              "WeChat",
+              "Type",
+              "ApplicationChannel",
+              "WeChatPublicAccount",
+              "Competitor",
+              "Source",
+              "MechatAdministratorAccount",
+              "MechatExpirationDate",
+              "PostalCode",
+              "AffiliatedDepartment",
+              "Status",
+              "Fax",
+              "Description",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at",
+              "OwnDate",
+              "TransferDate",
+              "OwnDays",
+              "BannedUser",
+              "BanExpiredTime"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Rating",
+            "Address",
+            "Phone",
+            "Website",
+            "owner",
+            "IndustryCategory",
+            "Industry",
+            "WeChat",
+            "Type",
+            "ApplicationChannel",
+            "WeChatPublicAccount",
+            "Competitor",
+            "Source",
+            "MechatAdministratorAccount",
+            "MechatExpirationDate",
+            "PostalCode",
+            "AffilatedDepartment",
+            "Status",
+            "Fax",
+            "Description",
+            "OwnDate",
+            "TransferDate",
+            "OwnDays",
+            "BannerUser",
+            "BannerExpiredTime",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Rating",
+            "Address",
+            "Phone",
+            "Website",
+            "owner",
+            "IndustryCategory",
+            "Industry",
+            "WeChat",
+            "Type",
+            "ApplicationChannel",
+            "WeChatPublicAccount",
+            "Competitor",
+            "Source",
+            "MechatAdministratorAccount",
+            "MechatExpirationDate",
+            "PostalCode",
+            "AffilatedDepartment",
+            "Status",
+            "Fax",
+            "Description",
+            "OwnDate",
+            "TransferDate",
+            "OwnDays",
+            "BannerUser",
+            "BannerExpiredTime",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "{{基本信息}}",
+            "Rating",
+            "Address",
+            "{{联系方式}}",
+            "PostalCode",
+            "Fax",
+            "Phone",
+            "Website",
+            "WeChat",
+            "MechatCustomerID",
+            "{{其他信息}}",
+            "IndustryCategory",
+            "Industry",
+            "Type",
+            "ApplicationChannel",
+            "WeChatPublicAccount",
+            "Competitor",
+            "Source",
+            "MechatAdministratorAccount",
+            "MechatExpirationDate",
+            "AffiliatedDepartment",
+            "Status",
+            "Description"
+          ],
+          "update_order": [
+            "name",
+            "{{基本信息}}",
+            "Rating",
+            "Address",
+            "{{联系方式}}",
+            "PostalCode",
+            "Fax",
+            "Phone",
+            "WeChat",
+            "Website",
+            "MechatCustomerID",
+            "{{其他信息}}",
+            "IndustryCategory",
+            "Industry",
+            "Type",
+            "ApplicationChannel",
+            "WeChatPublicAccount",
+            "Competitor",
+            "Source",
+            "MechatAdministratorAccount",
+            "MechatExpirationDate",
+            "AffiliatedDepartment",
+            "Status",
+            "Description"
+          ],
+          "fields_extends": {
+            "enterprise_fields": [
+              "name"
+            ],
+            "enterprise_fields_dictonary": {
+              "name": [
+                {
+                  "from": "name",
+                  "to": "name"
+                },
+                {
+                  "from": "phones",
+                  "to": "Phone"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "AccountActivity": {
+        "list": {
+          "table": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "ActivityContent"
+            ]
+          },
+          "tab": {
+            "order": [
+              "ActivityContent"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "android": {
+          "order": [
+            "ActivityContent"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "ActivityContent"
+          ],
+          "update_order": [
+            "ActivityContent"
+          ]
+        }
+      },
+      "PriceBook": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "IsActive",
+              "ItemsNumber",
+              "Sum",
+              "Description",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "IsActive",
+              "ItemsNumber",
+              "Sum",
+              "Description",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "IsActive",
+              "ItemsNumber",
+              "Sum",
+              "Description",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "IsActive",
+            "ItemsNumber",
+            "Sum",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "IsActive",
+            "ItemsNumber",
+            "Sum",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "IsActive",
+            "ItemsNumber",
+            "Sum",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "IsActive",
+            "ItemsNumber",
+            "Sum",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        }
+      },
+      "Leads": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Company",
+              "Title",
+              "Phone",
+              "LeadsSource",
+              "QQ",
+              "Address",
+              "WeChat",
+              "owner",
+              "Status",
+              "updated_at",
+              "created_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "extends",
+                "display_name": "线索转化",
+                "customer_modal_name": "modal_1",
+                "customer_action_name": "leads_to_account_and_contact"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Company"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Company",
+            "Title",
+            "Phone",
+            "Email",
+            "Department",
+            "Gender",
+            "LeadsSource",
+            "MobilePhone",
+            "QQ",
+            "Address",
+            "WeChat",
+            "IndustryCategory",
+            "Industry",
+            "owner",
+            "CampaignID",
+            "PostalCode",
+            "MechatAccountID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "RecommendedBy",
+            "Status",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Company",
+            "Title",
+            "Phone",
+            "Email",
+            "Department",
+            "Gender",
+            "LeadsSource",
+            "MobilePhone",
+            "QQ",
+            "Address",
+            "WeChat",
+            "IndustryCategory",
+            "Industry",
+            "owner",
+            "CampaignID",
+            "PostalCode",
+            "MechatAccountID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "RecommendedBy",
+            "Status",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "{{职务信息}}",
+            "IndustryCategory",
+            "Industry",
+            "Company",
+            "Title",
+            "Department",
+            "LeadsSource",
+            "CampaignID",
+            "PostalCode",
+            "MechatAccountID",
+            "AffiliatedDepartment",
+            "RecommendedBy",
+            "{{个人资料}}",
+            "Phone",
+            "Email",
+            "Gender",
+            "MobilePhone",
+            "QQ",
+            "Address",
+            "WeChat",
+            "{{其他资料}}",
+            "owner",
+            "CreatedAt",
+            "CreatedBy",
+            "Status",
+            "Description",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "Company",
+            "Title",
+            "Phone",
+            "LeadsSource",
+            "QQ",
+            "Address",
+            "WeChat",
+            "owner",
+            "Status",
+            "updated_at",
+            "created_at"
+          ]
+        }
+      },
+      "Invoice": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "InvoiceStatus",
+              "InvoiceType",
+              "Type",
+              "Approvalstatus",
+              "PostTime"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "InvoiceStatus",
+              "InvoiceType",
+              "Type",
+              "Approvalstatus",
+              "PostTime"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Type",
+              "InvoiceType",
+              "Approvalstatus",
+              "InvoiceStatus",
+              "Proof",
+              "Proofs",
+              "PostTime",
+              "PostCode",
+              "RechargeID",
+              "PayID",
+              "InvoiceTitle",
+              "PostAddress",
+              "ContactID",
+              "TaxNumber",
+              "BussLicense",
+              "Bank",
+              "BankAccount"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Type",
+            "InvoiceType",
+            "Approvalstatus",
+            "InvoiceStatus",
+            "Proof",
+            "Proofs",
+            "PostTime",
+            "PostCode",
+            "RechargeID",
+            "PayID",
+            "InvoiceTitle",
+            "PostAddress",
+            "ContactID",
+            "TaxNumber",
+            "BussLicense",
+            "Bank",
+            "BankAccount"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Type",
+            "InvoiceType",
+            "Approvalstatus",
+            "InvoiceStatus",
+            "Proof",
+            "Proofs",
+            "PostTime",
+            "PostCode",
+            "RechargeID",
+            "PayID",
+            "InvoiceTitle",
+            "PostAddress",
+            "ContactID",
+            "TaxNumber",
+            "BussLicense",
+            "Bank",
+            "BankAccount"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "Type",
+            "InvoiceType",
+            "Approvalstatus",
+            "InvoiceStatus",
+            "Proof",
+            "Proofs",
+            "PostTime",
+            "PostCode",
+            "RechargeID",
+            "PayID",
+            "InvoiceTitle",
+            "PostAddress",
+            "ContactID",
+            "TaxNumber",
+            "BussLicense",
+            "Bank",
+            "BankAccount"
+          ],
+          "update_order": [
+            "name",
+            "Type",
+            "InvoiceType",
+            "Approvalstatus",
+            "InvoiceStatus",
+            "Proof",
+            "Proofs",
+            "PostTime",
+            "PostCode",
+            "RechargeID",
+            "PayID",
+            "InvoiceTitle",
+            "PostAddress",
+            "ContactID",
+            "TaxNumber",
+            "BussLicense",
+            "Bank",
+            "BankAccount"
+          ]
+        }
+      },
+      "Bill": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "BillAmount",
+              "TalentStatus",
+              "AccountID",
+              "Balance",
+              "PeriodStart"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "BillAmount",
+              "TalentStatus",
+              "AccountID",
+              "Balance",
+              "PeriodStart"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "AccountID",
+              "PriceBookID",
+              "MechatAccount",
+              "PeriodStart",
+              "PeriodEnd",
+              "BillAmount",
+              "DeductTime",
+              "FirstSuccess",
+              "SecondSuccess",
+              "Balance",
+              "TalentStatus"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ],
+          "update_order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        }
+      },
+      "User": {
+        "list": {
+          "table": {
+            "order": [
+              "id",
+              "name",
+              "Phone",
+              "Department",
+              "BirthDate",
+              "Email",
+              "EmployeeID",
+              "EntryDate",
+              "Gender",
+              "Hobbies",
+              "Manager",
+              "MobilePhone",
+              "NativePlace",
+              "QQ",
+              "Title",
+              "created_at",
+              "owner"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "id",
+              "name",
+              "Phone",
+              "Department",
+              "BirthDate",
+              "Email",
+              "EmployeeID",
+              "EntryDate",
+              "Gender",
+              "Hobbies",
+              "Manager",
+              "MobilePhone",
+              "NativePlace",
+              "QQ",
+              "Title",
+              "created_at",
+              "owner"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "id",
+              "name",
+              "Phone",
+              "Department",
+              "BirthDate",
+              "Email",
+              "EmployeeID",
+              "EntryDate",
+              "Gender",
+              "Hobbies",
+              "Manager",
+              "MobilePhone",
+              "NativePlace",
+              "QQ",
+              "Title",
+              "created_at",
+              "owner"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "id",
+            "name",
+            "Phone",
+            "Department",
+            "BirthDate",
+            "Email",
+            "EmployeeID",
+            "EntryDate",
+            "Gender",
+            "Hobbies",
+            "Manager",
+            "MobilePhone",
+            "NativePlace",
+            "QQ",
+            "Title",
+            "created_at",
+            "owner"
+          ]
+        },
+        "android": {
+          "order": [
+            "id",
+            "name",
+            "Phone",
+            "Department",
+            "BirthDate",
+            "Email",
+            "EmployeeID",
+            "EntryDate",
+            "Gender",
+            "Hobbies",
+            "Manager",
+            "MobilePhone",
+            "NativePlace",
+            "QQ",
+            "Title",
+            "created_at",
+            "owner"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "id",
+            "name",
+            "Phone",
+            "Department",
+            "BirthDate",
+            "Email",
+            "EmployeeID",
+            "EntryDate",
+            "Gender",
+            "Hobbies",
+            "Manager",
+            "MobilePhone",
+            "NativePlace",
+            "QQ",
+            "Title"
+          ],
+          "update_order": [
+            "id",
+            "name",
+            "Phone",
+            "Department",
+            "BirthDate",
+            "Email",
+            "EmployeeID",
+            "EntryDate",
+            "Gender",
+            "Hobbies",
+            "Manager",
+            "MobilePhone",
+            "NativePlace",
+            "QQ",
+            "Title"
+          ]
+        }
+      },
+      "ToLoan": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "BankAccount",
+              "OpeningBank",
+              "StartTime",
+              "EndTime",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "BankAccount",
+              "OpeningBank",
+              "StartTime",
+              "EndTime",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "BankAccount",
+              "OpeningBank",
+              "StartTime",
+              "EndTime",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "BankAccount",
+            "OpeningBank",
+            "StartTime",
+            "EndTime",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "BankAccount",
+            "OpeningBank",
+            "StartTime",
+            "EndTime",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "BankAccount",
+            "OpeningBank",
+            "StartTime",
+            "EndTime",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ],
+          "create_order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "BankAccount",
+            "OpeningBank",
+            "StartTime",
+            "EndTime",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        }
+      },
+      "Campaign": {
+        "list": {
+          "table": {
+            "order": [
+              "name"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name"
+          ],
+          "create_order": [
+            "name"
+          ]
+        }
+      },
+      "PublicPayment": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "PayAccount",
+              "PaymentMethod",
+              "PaymentDate",
+              "BeneficiaryName",
+              "OpeningBank",
+              "BankAccount",
+              "ReturnTicket",
+              "InvoiceType",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "PayAccount",
+              "PaymentMethod",
+              "PaymentDate",
+              "BeneficiaryName",
+              "OpeningBank",
+              "BankAccount",
+              "ReturnTicket",
+              "InvoiceType",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Department",
+              "Reason",
+              "Amount",
+              "PayAccount",
+              "PaymentMethod",
+              "PaymentDate",
+              "BeneficiaryName",
+              "OpeningBank",
+              "BankAccount",
+              "ReturnTicket",
+              "InvoiceType",
+              "Remarks",
+              "Enclosure",
+              "Picture"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "PayAccount",
+            "PaymentMethod",
+            "PaymentDate",
+            "BeneficiaryName",
+            "OpeningBank",
+            "BankAccount",
+            "ReturnTicket",
+            "InvoiceType",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "PayAccount",
+            "PaymentMethod",
+            "PaymentDate",
+            "BeneficiaryName",
+            "OpeningBank",
+            "BankAccount",
+            "ReturnTicket",
+            "InvoiceType",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "PayAccount",
+            "PaymentMethod",
+            "PaymentDate",
+            "BeneficiaryName",
+            "OpeningBank",
+            "BankAccount",
+            "ReturnTicket",
+            "InvoiceType",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ],
+          "create_order": [
+            "name",
+            "Department",
+            "Reason",
+            "Amount",
+            "PayAccount",
+            "PaymentMethod",
+            "PaymentDate",
+            "BeneficiaryName",
+            "OpeningBank",
+            "BankAccount",
+            "ReturnTicket",
+            "InvoiceType",
+            "Remarks",
+            "Enclosure",
+            "Picture"
+          ]
+        }
+      },
+      "Recharge": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "AccountID",
+              "OrderType",
+              "VerService",
+              "ExpireDate",
+              "Years"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "OrderType",
+              "Discount",
+              "Payment",
+              "VerService"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "OrderType",
+              "MechatSA",
+              "VerService",
+              "SeatNum",
+              "FreeSeat",
+              "AvailableDate",
+              "ExpireDate",
+              "Years",
+              "PreOpen",
+              "FreeTime",
+              "Discount",
+              "Payment",
+              "AccountID",
+              "Comment",
+              "ContactWay",
+              "ContractID",
+              "Department",
+              "Drawee",
+              "MeiqiaID",
+              "PayType",
+              "Reason",
+              "Rechargetype",
+              "RealRecharge",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "OrderType",
+            "MechatSA",
+            "VerService",
+            "SeatNum",
+            "FreeSeat",
+            "AvailableDate",
+            "ExpireDate",
+            "Years",
+            "PreOpen",
+            "FreeTime",
+            "Discount",
+            "Payment",
+            "AccountID",
+            "Comment",
+            "ContactWay",
+            "ContractID",
+            "Department",
+            "Drawee",
+            "MeiqiaID",
+            "PayType",
+            "Reason",
+            "Rechargetype",
+            "RealRecharge"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "OrderType",
+            "MechatSA",
+            "VerService",
+            "SeatNum",
+            "FreeSeat",
+            "AvailableDate",
+            "ExpireDate",
+            "Years",
+            "PreOpen",
+            "FreeTime",
+            "Discount",
+            "Payment",
+            "AccountID",
+            "Comment",
+            "ContactWay",
+            "ContractID",
+            "Department",
+            "Drawee",
+            "MeiqiaID",
+            "PayType",
+            "Reason",
+            "Rechargetype",
+            "RealRecharge"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "OrderType",
+            "MechatSA",
+            "VerService",
+            "SeatNum",
+            "FreeSeat",
+            "PreOpen",
+            "AvailableDate",
+            "ExpireDate",
+            "FreeTime",
+            "Discount",
+            "AccountID",
+            "Comment",
+            "ContactWay",
+            "ContractID",
+            "Department",
+            "Drawee",
+            "MeiqiaID",
+            "PayType",
+            "Reason",
+            "Rechargetype",
+            "RealRecharge"
+          ],
+          "update_order": [
+            "name",
+            "OrderType",
+            "MechatSA",
+            "VerService",
+            "SeatNum",
+            "FreeSeat",
+            "AvailableDate",
+            "ExpireDate",
+            "Years",
+            "PreOpen",
+            "FreeTime",
+            "Discount",
+            "Payment",
+            "AccountID",
+            "Comment",
+            "ContactWay",
+            "ContractID",
+            "Department",
+            "Drawee",
+            "MeiqiaID",
+            "PayType",
+            "Reason",
+            "Rechargetype",
+            "RealRecharge"
+          ]
+        }
+      },
+      "Contract": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "ContractNumber",
+              "AccountID",
+              "Status",
+              "ContractType",
+              "StartDate",
+              "EndDate",
+              "owner",
+              "SignedDate",
+              "ApprovalStatus",
+              "updated_by",
+              "updated_at"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "ContractNumber",
+              "AccountID",
+              "Status",
+              "ContractType",
+              "StartDate",
+              "EndDate",
+              "owner",
+              "SignedDate",
+              "ApprovalStatus",
+              "updated_by",
+              "updated_at"
+            ],
+            "option_buttons": [
+              {
+                "type": "modal",
+                "operation": "edit",
+                "display_name": "编辑"
+              },
+              {
+                "type": "modal",
+                "operation": "delete",
+                "display_name": "删除"
+              },
+              {
+                "type": "modal",
+                "icon": null,
+                "operation": "transfer",
+                "display_name": "更改所有人"
+              }
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "ContractNumber",
+              "AccountID",
+              "Status",
+              "ContractType",
+              "StartDate",
+              "EndDate",
+              "ContractTerm",
+              "owner",
+              "SignedDate",
+              "CompanySignedID",
+              "CustomerSignedID",
+              "SpecialTerms",
+              "PriceBookID",
+              "ApprovalStatus",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "ContractNumber",
+            "AccountID",
+            "Status",
+            "ContractType",
+            "StartDate",
+            "EndDate",
+            "ContractTerm",
+            "owner",
+            "SignedDate",
+            "CompanySignedID",
+            "CustomerSignedID",
+            "SpecialTerms",
+            "PriceBookID",
+            "ApprovalStatus",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "ContractNumber",
+            "AccountID",
+            "Status",
+            "ContractType",
+            "StartDate",
+            "EndDate",
+            "ContractTerm",
+            "owner",
+            "SignedDate",
+            "CompanySignedID",
+            "CustomerSignedID",
+            "SpecialTerms",
+            "PriceBookID",
+            "ApprovalStatus",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "ContractNumber",
+            "AccountID",
+            "Status",
+            "ContractType",
+            "StartDate",
+            "EndDate",
+            "ContractTerm",
+            "owner",
+            "SignedDate",
+            "CompanySignedID",
+            "CustomerSignedID",
+            "SpecialTerms",
+            "PriceBookID",
+            "ApprovalStatus",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "ContractNumber",
+            "AccountID",
+            "Status",
+            "ContractType",
+            "StartDate",
+            "EndDate",
+            "ContractTerm",
+            "owner",
+            "SignedDate",
+            "CompanySignedID",
+            "CustomerSignedID",
+            "SpecialTerms",
+            "PriceBookID",
+            "ApprovalStatus",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        }
+      },
+      "BillItem": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Quantity",
+              "Comsumption"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Quantity",
+              "Comsumption"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "BillID",
+              "PriceBookItemID",
+              "Quantity",
+              "Price",
+              "Unit",
+              "Comsumption",
+              "ComsumpAmount"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "BillID",
+            "PriceBookItemID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Comsumption",
+            "CumsumpAmount"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "BillID",
+            "PriceBookItemID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Comsumption",
+            "CumsumpAmount"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "bill_id",
+            "PriceBookItemID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Comsumption",
+            "ComsumpAmount"
+          ],
+          "update_order": [
+            "name",
+            "BillID",
+            "PriceBookItemID",
+            "Quantity",
+            "Price",
+            "Unit",
+            "Comsumption",
+            "ComsumpAmount"
+          ]
+        }
+      },
+      "MorningMeetingOut": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "StartTime",
+              "EndTime",
+              "Reason",
+              "Hours",
+              "RecordPicture"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "StartTime",
+              "EndTime",
+              "Reason",
+              "Hours",
+              "RecordPicture"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "StartTime",
+              "EndTime",
+              "Reason",
+              "Hours",
+              "RecordPicture"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "StartTime",
+            "EndTime",
+            "Reason",
+            "Hours",
+            "RecordPicture"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "StartTime",
+            "EndTime",
+            "Reason",
+            "Hours",
+            "RecordPicture"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "StartTime",
+            "EndTime",
+            "Reason",
+            "Hours",
+            "RecordPicture"
+          ],
+          "create_order": [
+            "name",
+            "StartTime",
+            "EndTime",
+            "Reason",
+            "Hours",
+            "RecordPicture"
+          ]
+        }
+      },
+      "SaleTask": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "AccountID",
+              "PriceBookID",
+              "MechatAccount",
+              "PeriodStart",
+              "PeriodEnd",
+              "BillAmount",
+              "DeductTime",
+              "FirstSuccess",
+              "SecondSuccess",
+              "Balance",
+              "TalentStatus"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "AccountID",
+              "PriceBookID",
+              "MechatAccount",
+              "PeriodStart",
+              "PeriodEnd",
+              "BillAmount",
+              "DeductTime",
+              "FirstSuccess",
+              "SecondSuccess",
+              "Balance",
+              "TalentStatus"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "AccountID",
+              "PriceBookID",
+              "MechatAccount",
+              "PeriodStart",
+              "PeriodEnd",
+              "BillAmount",
+              "DeductTime",
+              "FirstSuccess",
+              "SecondSuccess",
+              "Balance",
+              "TalentStatus"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ],
+          "create_order": [
+            "name",
+            "AccountID",
+            "PriceBookID",
+            "MechatAccount",
+            "PeriodStart",
+            "PeriodEnd",
+            "BillAmount",
+            "DeductTime",
+            "FirstSuccess",
+            "SecondSuccess",
+            "Balance",
+            "TalentStatus"
+          ]
+        }
+      },
+      "Package": {
+        "list": null,
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "PackageNumber",
+              "Details",
+              "TotalPrice",
+              "StartDate",
+              "EndDate",
+              "Status",
+              "EffectiveWay",
+              "Unit",
+              "owner",
+              "updated_by",
+              "updated_at"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "PackageNumber",
+              "Details",
+              "TotalPrice",
+              "StartDate",
+              "EndDate",
+              "Status",
+              "EffectiveWay",
+              "Unit",
+              "Description",
+              "owner",
+              "updated_by",
+              "updated_at",
+              "created_by",
+              "created_at"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "PackageNumber",
+            "Details",
+            "TotalPrice",
+            "StartDate",
+            "EndDate",
+            "Status",
+            "EffectiveWay",
+            "Unit",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "PackageNumber",
+            "Details",
+            "TotalPrice",
+            "StartDate",
+            "EndDate",
+            "Status",
+            "EffectiveWay",
+            "Unit",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        },
+        "global": {
+          "create_order": [
+            "name",
+            "PackageNumber",
+            "Details",
+            "TotalPrice",
+            "StartDate",
+            "EndDate",
+            "Status",
+            "EffectiveWay",
+            "Unit",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ],
+          "update_order": [
+            "name",
+            "PackageNumber",
+            "Details",
+            "TotalPrice",
+            "StartDate",
+            "EndDate",
+            "Status",
+            "EffectiveWay",
+            "Unit",
+            "Description",
+            "owner",
+            "updated_by",
+            "updated_at",
+            "created_by",
+            "created_at"
+          ]
+        }
+      },
+      "OrderClaim": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "OrderType",
+              "VerService",
+              "PayType",
+              "MechatSA",
+              "Rechargetype",
+              "ClaimPictures"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "OrderType",
+              "VerService",
+              "PayType",
+              "MechatSA",
+              "Rechargetype",
+              "ClaimPictures"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "OrderType",
+              "VerService",
+              "PayType",
+              "MechatSA",
+              "Rechargetype",
+              "ClaimPictures"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "OrderType",
+            "VerService",
+            "PayType",
+            "MechatSA",
+            "Rechargetype",
+            "ClaimPictures"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "OrderType",
+            "VerService",
+            "PayType",
+            "MechatSA",
+            "Rechargetype",
+            "ClaimPictures"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "OrderType",
+            "VerService",
+            "PayType",
+            "MechatSA",
+            "Rechargetype",
+            "ClaimPictures"
+          ],
+          "create_order": [
+            "name",
+            "OrderType",
+            "VerService",
+            "PayType",
+            "MechatSA",
+            "Rechargetype",
+            "ClaimPictures"
+          ]
+        }
+      },
+      "Leads_convert_log": {
+        "list": {
+          "table": {
+            "order": [
+              "name",
+              "Status",
+              "Company",
+              "Gender",
+              "MechatAccountID",
+              "Department",
+              "Title",
+              "LeadsSource",
+              "MobilePhone",
+              "Phone",
+              "Email",
+              "WeChat",
+              "Address",
+              "PostalCode",
+              "Description",
+              "CampaignID",
+              "AffiliatedDepartment",
+              "CreatedAt",
+              "CreatedBy",
+              "QQ",
+              "RecommendedBy",
+              "IndustryCategory",
+              "Industry",
+              "convert_leads_id",
+              "convert_account_id",
+              "convert_contact_id"
+            ]
+          }
+        },
+        "detail": {
+          "page_header": {
+            "order": [
+              "name",
+              "Status",
+              "Company",
+              "Gender",
+              "MechatAccountID",
+              "Department",
+              "Title",
+              "LeadsSource",
+              "MobilePhone",
+              "Phone",
+              "Email",
+              "WeChat",
+              "Address",
+              "PostalCode",
+              "Description",
+              "CampaignID",
+              "AffiliatedDepartment",
+              "CreatedAt",
+              "CreatedBy",
+              "QQ",
+              "RecommendedBy",
+              "IndustryCategory",
+              "Industry",
+              "convert_leads_id",
+              "convert_account_id",
+              "convert_contact_id"
+            ]
+          },
+          "tab": {
+            "order": [
+              "name",
+              "Status",
+              "Company",
+              "Gender",
+              "MechatAccountID",
+              "Department",
+              "Title",
+              "LeadsSource",
+              "MobilePhone",
+              "Phone",
+              "Email",
+              "WeChat",
+              "Address",
+              "PostalCode",
+              "Description",
+              "CampaignID",
+              "AffiliatedDepartment",
+              "CreatedAt",
+              "CreatedBy",
+              "QQ",
+              "RecommendedBy",
+              "IndustryCategory",
+              "Industry",
+              "convert_leads_id",
+              "convert_account_id",
+              "convert_contact_id"
+            ]
+          }
+        },
+        "ios": {
+          "order": [
+            "name",
+            "Status",
+            "Company",
+            "Gender",
+            "MechatAccountID",
+            "Department",
+            "Title",
+            "LeadsSource",
+            "MobilePhone",
+            "Phone",
+            "Email",
+            "WeChat",
+            "Address",
+            "PostalCode",
+            "Description",
+            "CampaignID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "QQ",
+            "RecommendedBy",
+            "IndustryCategory",
+            "Industry",
+            "convert_leads_id",
+            "convert_account_id",
+            "convert_contact_id"
+          ]
+        },
+        "android": {
+          "order": [
+            "name",
+            "Status",
+            "Company",
+            "Gender",
+            "MechatAccountID",
+            "Department",
+            "Title",
+            "LeadsSource",
+            "MobilePhone",
+            "Phone",
+            "Email",
+            "WeChat",
+            "Address",
+            "PostalCode",
+            "Description",
+            "CampaignID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "QQ",
+            "RecommendedBy",
+            "IndustryCategory",
+            "Industry",
+            "convert_leads_id",
+            "convert_account_id",
+            "convert_contact_id"
+          ]
+        },
+        "global": {
+          "update_order": [
+            "name",
+            "Status",
+            "Company",
+            "Gender",
+            "MechatAccountID",
+            "Department",
+            "Title",
+            "LeadsSource",
+            "MobilePhone",
+            "Phone",
+            "Email",
+            "WeChat",
+            "Address",
+            "PostalCode",
+            "Description",
+            "CampaignID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "QQ",
+            "RecommendedBy",
+            "IndustryCategory",
+            "Industry",
+            "convert_leads_id",
+            "convert_account_id",
+            "convert_contact_id"
+          ],
+          "create_order": [
+            "name",
+            "Status",
+            "Company",
+            "Gender",
+            "MechatAccountID",
+            "Department",
+            "Title",
+            "LeadsSource",
+            "MobilePhone",
+            "Phone",
+            "Email",
+            "WeChat",
+            "Address",
+            "PostalCode",
+            "Description",
+            "CampaignID",
+            "AffiliatedDepartment",
+            "CreatedAt",
+            "CreatedBy",
+            "QQ",
+            "RecommendedBy",
+            "IndustryCategory",
+            "Industry",
+            "convert_leads_id",
+            "convert_account_id",
+            "convert_contact_id"
+          ]
+        }
+      }
+    },
+    "global_header": [
+      {
+        "group_name": "线索/客户",
+        "children": [
+          {
+            "display_name": "线索",
+            "name": "Leads"
+          },
+          {
+            "display_name": "客户",
+            "name": "Account"
+          }
+        ]
+      },
+      {
+        "group_name": "二级",
+        "children": [
+          {
+            "display_name": "联系人",
+            "name": "Contact"
+          },
+          {
+            "group_name": "三级",
+            "children": [
+              {
+                "display_name": "联系人",
+                "name": "Contact"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "display_name": "商机",
+        "name": "Opportunity"
+      },
+      {
+        "display_name": "合同",
+        "name": "Contract"
+      },
+      {
+        "display_name": "充值订单",
+        "name": "Recharge"
+      },
+      {
+        "display_name": "回款计划",
+        "name": "Pay"
+      },
+      {
+        "display_name": "退款订单",
+        "name": "Refund"
+      },
+      {
+        "display_name": "发票",
+        "name": "Invoice"
+      }
+    ],
+    "setting": null
+  }
+}

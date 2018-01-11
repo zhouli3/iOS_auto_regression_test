@@ -1,0 +1,23 @@
+环境需要
+requests
+HTMLTestRunner 从 lib 拷贝到自己的python 环境的site-packages下
+
+
+测试用例编写参考TestAccount
+
+规范;
+1.测试用例文件夹都以Test开头
+2.在文件夹下创建__init__.py
+3.编写测试用例参考  class TestAccount
+4.最后gl.suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestAccount)) 
+5.在main.py中引用from TestAccount import TestAccount， 多个testsuit需要有顺序执行时，引用
+的顺序就是testsuit执行的顺序。
+例如：from TestAccount import TestAccount
+     from TestTenant import TestTenant
+就是先执行TestAccount，再执行TestTenant
+
+6.每次上传编写完成的脚本，使用rmpyc.sh删除所有pyc文件再提交代码。
+
+
+单独调试某个测试类的方法，参考
+debug.py
