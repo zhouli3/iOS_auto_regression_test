@@ -183,6 +183,10 @@ customer_tenant_id_online = "49196" #线上环境
 suite_id = 13
 
 
+#job-service相关
+cron_id = ""
+job_id = ""
+script = "var time = import(\"time\");var fmt = import(\"fmt\");sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));println(\"test\")"
 
 #接口版本
 api_version = "v1.0"
