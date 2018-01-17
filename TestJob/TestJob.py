@@ -11,6 +11,9 @@ import time
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+cron_id = ""
+job_id = ""
+script = "var time = import(\"time\");var fmt = import(\"fmt\");sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));sh.Log(fmt.Sprintf(\"%s\", time.Now()));println(\"test\")"
 
 class TestJob(unittest.TestCase):
     """测试job http doc（定时任务http文档）"""
